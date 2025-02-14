@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebee;
+            color: #d32f2f;
+            text-align: center;
+            flex-direction: column;
+            background-image: url('../img/fondo.jpg'); /* Imagen local */
+            background-size: cover; /* Ajuste sin distorsión */
+            background-position: center; /* Centrado */
+            background-repeat: no-repeat; /* No se repite */
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px; /* Tamaño de la imagen */
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center; /* Centra los botones horizontalmente */
+            gap: 20px;
+            width: 100%; /* Ocupa todo el ancho disponible */
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Para que no tenga subrayado */
+            display: inline-block; /* Para que funcione como botón */
+        }
+
+        .btn-si {
+            background-color: #4caf50; /* Verde */
+            color: white;
+        }
+
+        .btn-no {
+            background-color: #d32f2f; /* Rojo */
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Animación para el botón "No" */
+        .btn-no:hover {
+            animation: moveButton 0.5s ease;
+        }
+        
+        
+        @keyframes moveButton {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <!-- Imagen en el centro -->
+        <img src="../img/gatito4.gif" alt="Imagen de San Valentín">
+        <!-- Botones -->
+        <div class="buttons">
+            <a href="si.html" class="btn btn-si">Sí</a>
+            <a href="pagina4.html" class="btn btn-no">Piensalo de nuevo.</a>
+        </div>
+    </div>
+</body>
+</html>
